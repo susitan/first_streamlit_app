@@ -46,7 +46,7 @@ try:
    
 except URLError as e:
   streamlit.error()
-  streamlit.stop()
+# streamlit.stop()
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response.json()) #just writes the data to the screen
